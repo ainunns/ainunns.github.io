@@ -1,74 +1,87 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-	<head> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, shrink-to-fit=no">
-		<title>Ainun's Blogs</title> 
-		<style type="text/css">
-			#bg{
-				background-image: url(https://ainunns.github.io/blue-mountains.png);
-			}
-			.header{
-				margin-top:  20px;
-				margin-right: 3px;
-				margin-left: 3px;
-				background-color: skyblue;
-				min-width: 10px;
-				min-height: 50px;
-			}
-			.header-greet{
-				float: left;
-				margin-left: 10px;
-				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-				margin-top: 10px;
-				font-size: 17px;
-			}
-			.header-menu{
-				margin-right: 10px; 
-				float: right;
-			}
-			.header-menu ul{
-				padding: 0;
-			}
-			.header-menu ul li {
-				display: inline-block;
-				font-size: 17px;
-				margin-top: -10px;
-			}
-			.home{
-				margin-right: 3px;
-				margin-left: 3px;
-				min-width: 10px;
-				min-height: 520px;
-				background-color: transparent;
-			}
-			.footer{
-				min-width: 10px;
-				min-height: 20px;
-				background-color: #1a8cff;
-			}
-			.footer p{
-				text-align: center;
-			}
-		</style>
-	</head> 
-	<body id="bg"> 
-		<div class="header">
-			<div class="header-greet">
-				<a href="https://ainunns.github.io"><strong>Ainun's World</strong></a>
-			</div>
-			<div class="header-menu">
-				<ul>
-					<li><a href="https://ainunns.github.io/">Home</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="about.html">About</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="home">
-			
-		</div>
-		<div class="footer">
-			<p>Made with love by <a href="https://github.com/ainunns">Ainun</a> copyright 2020 </p>
-		</div>
-	</body> 
-</html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, shrink-to-fit=no">
+	<title>Ainun's Blogs</title> 
+    <style type="text/css">
+    	.container{
+    		margin: 0 auto;
+    	}
+    	.tablink {
+		  background-color: skyblue;
+		  color: white;
+		  float: left;
+		  border: none;
+		  outline: none;
+		  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+		  cursor: pointer;
+		  padding: 14px 16px;
+		  font-size: 40px;
+		  width: 100%;
+		}
+		.tablink:hover {
+		  background-color: #777;
+		}
+    	.header{
+    		background-color: #skyblue;
+    		min-height: 50px;
+    		text-align: center;
+    	}
+    	.menu{
+    		align-content: center;
+    	}
+    	.menu table{
+    		padding: 0;
+    		border-collapse: collapse;
+    		width: 100%;
+    	}
+    	.menu table tr td{
+    		padding: 0;
+    		background-color: skyblue;
+    		border: 3px solid black;
+    		text-decoration: none;
+    	}
+    	.menu table tr td a{
+    		font-size: 20px;
+    	}
+    	.tabcontent {
+		  padding: 100px 20px;
+		  height: 100%;
+		  background-color: #E3E3E3;
+          min-height: 100px;
+        }
+        .footer{
+			min-width: 10px;
+			min-height: 20px;
+			background-color: #1a8cff;
+		}
+		.footer p{
+			text-align: center;
+		}
+    </style>
+</head>
+<body style="background-image: url(blue-mountains.png);">
+    <div class="container">
+    <div class="header">
+    <a href="https://ainunns.github.io"><button class="tablink"><strong>Ainun's World</strong></button></a>
+    <div class="menu">
+    	<table>
+    		<tr style="height: 40px">
+				<td><a href="https://ainunns.github.io"><button class="tablink">Home</button></a></td>
+				<td><a href="#"><button class="tablink">Blog</button></a></td>
+				<td><a href="about.html"><button class="tablink">About</button></a></td>
+			</tr>
+    	</table>
+    </div>
+	</div>
+    <div class="tabcontent">
+        <h2>Bonjour!</h2>
+        <p>
+        	Welcome to my pages! Who am I? Let me tell you <a href="about.html">here</a>
+        </p>
+    </div>
+    <div class="footer">
+        <p>Made with love by <a href="https://github.com/ainunns">Ainun</a> copyright 2020 </p>
+    </div>
+    </div>
+</body>
