@@ -1,88 +1,105 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, shrink-to-fit=no">
-	<title>Ainun's Blogs</title> 
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <title>Ainun's Blogs</title> 
     <style type="text/css">
-    	.container{
-    		margin: 0 auto;
-    	}
-    	.tablink {
-		  background-color: skyblue;
-		  color: white;
-		  float: left;
-		  border: none;
-		  outline: none;
-		  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-		  cursor: pointer;
-		  padding: 14px 16px;
-		  font-size: 40px;
-		  width: 100%;
-		}
-		.tablink:hover {
-		  background-color: #777;
-		}
-    	.header{
-    		background-color: #skyblue;
-    		min-height: 50px;
-    		text-align: center;
-    	}
-    	.menu{
-    		align-content: center;
-    	}
-    	.menu table{
-    		padding: 0;
-    		border-collapse: collapse;
-    		width: 100%;
-    	}
-    	.menu table tr td{
-    		padding: 0;
-    		background-color: skyblue;
-    		border: 3px solid black;
-    		text-decoration: none;
-    	}
-    	.menu table tr td a{
-    		font-size: 20px;
-    	}
-    	.tabcontent {
-		  padding: 100px 20px;
-		  height: 100%;
-		  background-color: #E3E3E3;
-          min-height: 100px;
+      .container{
+        margin-right: 5%;
+            margin-left: 5%;
+            flex: 100%;
+      }
+        .tablink-menu{
+          background-color: skyblue;
+          color: black;
+          float: left;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          padding: 8px 12px;
+          font-size: 150%;
+          width: 100%;
+        }
+      .tablink-main{
+            background-color: skyblue;
+            color: white;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            font-size: 250%;
+            width: 100%;
+    }
+    .tablink-main:hover{
+            background-color: #777;
+    }
+        .tablink-menu:hover{
+            background-color: #777;
+        }
+      .header{
+        background-color: #skyblue;
+        min-height: 50px;
+        text-align: center;
+      }
+      .menu{
+        align-content: center;
+      }
+      .menu table{
+        padding: 0;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      .menu table tr td{
+        padding: 0;
+        background-color: skyblue;
+        border: 3px solid black;
+        text-decoration: none;
+      }
+      .tabcontent {
+            padding-top: 1%;
+            padding-left: 5%;
+            padding-right: 0%;
+            padding-bottom: 35%;
+            height: 300%;
+        background-color: #E3E3E3;
         }
         .footer{
-			min-width: 10px;
-			min-height: 20px;
-			background-color: #1a8cff;
-		}
-		.footer p{
-			text-align: center;
-		}
+            position: fixed;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            min-height: 20px;
+            text-align: center;
+            background-color: #1a8cff;
+        }
     </style>
 </head>
-<body style="background-image: url(blue-mountains.png);">
+<body style="background-image: url(blue-mountains.png); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
     <div class="container">
     <div class="header">
-    <a href="https://ainunns.github.io"><button class="tablink"><strong>Ainun's World</strong></button></a>
+    <a href="https://ainunns.github.io"><button class="tablink-main"><strong>Ainun's World</strong></button></a>
     <div class="menu">
-    	<table>
-    		<tr style="height: 40px">
-				<td><a href="https://ainunns.github.io"><button class="tablink">Home</button></a></td>
-				<td><a href="#"><button class="tablink">Blog</button></a></td>
-				<td><a href="about.html"><button class="tablink">About</button></a></td>
-			</tr>
-    	</table>
+      <table>
+        <tr>
+        <td><a href="https://ainunns.github.io"><button class="tablink-menu">Home</button></a></td>
+        <td><a href="#"><button class="tablink-menu">Blog</button></a></td>
+        <td><a href="about.html"><button class="tablink-menu">About</button></a></td>
+      </tr>
+      </table>
     </div>
-	</div>
+  </div>
     <div class="tabcontent">
+        <div class="tabcontent">
         <p>Hi, you can call me Ainun. I'm just a little girl who have addicted with Competitive Programming.<br> Find Me on some online judges: <br>
-				<li><a href="https://tlx.toki.id/profiles/ainunnadhifahs">TLX : ainunnadhifahs.</a></li>
-				<li><a href="https://codeforces.com/profile/ainunsyamsiyah">Codeforces : ainunsyamsiyah.</a></li>
-				<li><a href="https://vjudge.net/user/ainunsy1">VJudge : ainunsy1.</a></li>
-			</p>
+                <li><a href="https://tlx.toki.id/profiles/ainunnadhifahs">TLX : ainunnadhifahs.</a></li>
+                <li><a href="https://codeforces.com/profile/ainunsyamsiyah">Codeforces : ainunsyamsiyah.</a></li>
+                <li><a href="https://vjudge.net/user/ainunsy1">VJudge : ainunsy1.</a></li>
+            </p>
+    </div>
+    </div>
     </div>
     <div class="footer">
         <p>Made with love by <a href="https://github.com/ainunns">Ainun</a> copyright 2020 </p>
-    </div>
     </div>
 </body>
